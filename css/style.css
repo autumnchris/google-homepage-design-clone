@@ -17,6 +17,15 @@ body {
   position: relative;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  justify-content: space-between;
+  margin-right: 8px;
+  margin-left: 15px;
+}
+
 footer {
   background: hsl(0, 0%, 95%);
   bottom: 0;
@@ -119,6 +128,50 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.header-item .nav-list a,
+.header-item .nav-list a:visited,
+.header-item .nav-list a:hover,
+.header-item .nav-list a:active,
+.header-item .nav-list a:focus {
+  margin: 0 10px;
+}
+
+.apps-button,
+.apps-button:hover,
+.apps-button:active,
+.apps-button:focus {
+  border-radius: 50%;
+  height: 40px;
+  margin: 0 5px;
+  padding: 4px;
+  width: 40px;
+}
+
+.apps-button:hover {
+  background: hsl(0, 0%, 94%);
+}
+
+.apps-icon {
+  vertical-align: middle;
+}
+
+.sign-in-button,
+.sign-in-button:visited,
+.sign-in-button:hover,
+.sign-in-button:active,
+.sign-in-button:focus {
+  color: hsl(0, 0%, 100%);
+  background: #1a73e8;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  min-width: 60px;
+  padding: 9px 15px;
+}
+
+.sign-in-button:hover {
+  background: #2b7de9;
 }
 
 .carbon-neutral-link,
