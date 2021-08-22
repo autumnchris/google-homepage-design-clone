@@ -26,6 +26,10 @@ header {
   margin-left: 15px;
 }
 
+main {
+  padding: 0 20px 140px;
+}
+
 footer {
   background: hsl(0, 0%, 95%);
   bottom: 0;
@@ -192,6 +196,71 @@ header .nav-bar:first-child a:focus {
   background: #2b7de9;
 }
 
+.search-form {
+  margin: 0 auto;
+  max-width: 584px;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.search-form .search-icon {
+  color: #9aa0a6;
+  font-size: 1.4rem;
+  left: 14px;
+  position: absolute;
+  top: 19px;
+}
+
+.search-form input[type=search] {
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  font-size: 1.1rem;
+  height: 44px;
+  margin: 5px 0;
+  padding: 10px 45px;
+}
+
+.search-form input[type=search]:hover,
+.search-form input[type=search]:focus {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 28%);
+  outline: none;
+}
+
+.search-form .google-mic-button,
+.search-form .google-mic-button:hover,
+.search-form .google-mic-button:active,
+.search-form .google-mic-button:focus {
+  display: inline;
+  position: absolute;
+  right: 20px;
+  top: 17px;
+}
+
+.search-form .google-mic {
+  max-width: 15px;
+}
+
+.search-form .button-group {
+  padding-top: 18px;
+}
+
+.search-form .search-button,
+.search-form .search-button:visited,
+.search-form .search-button:hover,
+.search-form .search-button:active,
+.search-form .search-button:focus {
+  background: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  margin: 11px 4px;
+  padding: 10px 16px;
+}
+
+.search-form .search-button:hover {
+  border: 1px solid #dadce0;
+}
+
 .carbon-neutral-link,
 .footer-item .nav-list a,
 .footer-item .nav-list a:visited,
@@ -219,6 +288,10 @@ header .nav-bar:first-child a:focus {
     justify-content: space-evenly;
   }
 
+  main {
+    padding-bottom: 95px;
+  }
+
   header a,
   header a:visited,
   header a:hover,
@@ -244,6 +317,10 @@ header .nav-bar:first-child a:focus {
   footer {
     flex-wrap: initial;
     justify-content: space-between;
+  }
+
+  main {
+    padding-bottom: 50px;
   }
 
   .carbon-neutral-link {
