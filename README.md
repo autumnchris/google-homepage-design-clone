@@ -12,3 +12,7 @@ Inspired by the [Google Homepage assignment](https://www.theodinproject.com/path
 * [Normalize.css](http://necolas.github.io/normalize.css)
 * [Material Icons](https://fonts.google.com/icons)
 * [Google Fonts](https://fonts.google.com)
+
+## Demo
+
+View project demo at [https://autumnchris.github.io/google-homepage-design-demo](https://autumnchris.github.io/google-homepage-design-demo).
