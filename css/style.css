@@ -57,6 +57,26 @@ button:focus {
   box-sizing: border-box;
 }
 
+button,
+button:hover,
+button:active,
+button:focus,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+}
+
+input {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  color: hsl(0, 0%, 0%);
+  padding: 0;
+  width: 100%;
+}
+
 a,
 a:visited,
 a:hover,
@@ -68,6 +88,29 @@ a:focus {
 
 a:hover {
   text-decoration: underline;
+}
+
+.button,
+.button:visited,
+.button:hover,
+.button:active,
+.button:focus {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  line-height: normal;
+  padding: 0;
+  width: auto;
+}
+
+.button:hover {
+  text-decoration: none;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
 }
 
 /* SPECIFIC ELEMENT STYLES */
