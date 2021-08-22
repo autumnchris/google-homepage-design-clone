@@ -17,6 +17,20 @@ body {
   position: relative;
 }
 
+footer {
+  background: hsl(0, 0%, 95%);
+  bottom: 0;
+  color: #70757a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  padding: 0 20px;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+
 h1,
 h2,
 h3,
@@ -54,4 +68,57 @@ a:focus {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* SPECIFIC ELEMENT STYLES */
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carbon-neutral-link,
+.footer-item .nav-list a,
+.footer-item .nav-list a:visited,
+.footer-item .nav-list a:hover,
+.footer-item .nav-list a:active,
+.footer-item .nav-list a:focus {
+  padding: 15px;
+}
+
+.carbon-neutral-link {
+  order: -1;
+}
+
+.carbon-neutral-link .green-leaf {
+  max-width: 12px;
+}
+
+/* MEDIA QUERIES */
+
+@media all and (min-width: 600px) {
+
+  footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .carbon-neutral-link {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 1200px) {
+
+  footer {
+    flex-wrap: initial;
+    justify-content: space-between;
+  }
+
+  .carbon-neutral-link {
+    order: 0;
+    width: initial;
+  }
 }
