@@ -130,6 +130,22 @@ a:hover {
   justify-content: center;
 }
 
+header a,
+header a:visited,
+header a:hover,
+header a:active,
+header a:focus {
+  display: none;
+}
+
+header .nav-bar:first-child a,
+header .nav-bar:first-child a:visited,
+header .nav-bar:first-child a:hover,
+header .nav-bar:first-child a:active,
+header .nav-bar:first-child a:focus {
+  display: initial;
+}
+
 .header-item .nav-list a,
 .header-item .nav-list a:visited,
 .header-item .nav-list a:hover,
@@ -143,6 +159,7 @@ a:hover {
 .apps-button:active,
 .apps-button:focus {
   border-radius: 50%;
+  display: none;
   height: 40px;
   margin: 0 5px;
   padding: 4px;
@@ -166,6 +183,7 @@ a:hover {
   background: #1a73e8;
   border: 1px solid transparent;
   border-radius: 4px;
+  display: initial;
   min-width: 60px;
   padding: 9px 15px;
 }
@@ -199,6 +217,21 @@ a:hover {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+  }
+
+  header a,
+  header a:visited,
+  header a:hover,
+  header a:active,
+  header a:focus {
+    display: initial;
+  }
+
+  .apps-button,
+  .apps-button:hover,
+  .apps-button:active,
+  .apps-button:focus {
+    display: initial;
   }
 
   .carbon-neutral-link {
