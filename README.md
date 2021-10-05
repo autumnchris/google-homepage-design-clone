@@ -2,7 +2,7 @@
 
 An HTML & CSS design clone of Google's homepage.
 
-Inspired by the [Google Homepage assignment](https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/html-css) as part of the curriculum for the [Foundations course](https://www.theodinproject.com/paths/foundations/courses/foundations) on [The Odin Project](https://www.theodinproject.com).
+Inspired by the Google Homepage assignment which was formerly part of the curriculum for the [Foundations course](https://www.theodinproject.com/paths/foundations/courses/foundations) on [The Odin Project](https://www.theodinproject.com).
 
 ---
 
