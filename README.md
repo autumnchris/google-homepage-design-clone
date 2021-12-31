@@ -1,4 +1,4 @@
-# Google Homepage Design Demo
+# Google Homepage Design Clone
 
 An HTML & CSS design clone of Google's homepage.
 
@@ -15,4 +15,4 @@ Inspired by the Google Homepage assignment which was formerly part of the curric
 
 ## Demo
 
-View project demo at [https://autumnchris.github.io/google-homepage-design-demo](https://autumnchris.github.io/google-homepage-design-demo).
+View project demo at [https://autumnchris.github.io/google-homepage-design-clone](https://autumnchris.github.io/google-homepage-design-clone).
