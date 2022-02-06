@@ -238,7 +238,7 @@ header .nav-bar:first-child a:focus {
   top: 19px;
 }
 
-.search-form input[type=search] {
+.search-form .search-input {
   border: 1px solid #dfe1e5;
   border-radius: 24px;
   font-size: 1.1rem;
@@ -247,8 +247,8 @@ header .nav-bar:first-child a:focus {
   padding: 10px 45px;
 }
 
-.search-form input[type=search]:hover,
-.search-form input[type=search]:focus {
+.search-form .search-input:hover,
+.search-form .search-input:focus {
   -webkit-box-shadow: 0 1px 6px rgba(32, 33, 36, 28%);
   box-shadow: 0 1px 6px rgba(32, 33, 36, 28%);
   outline: none;
