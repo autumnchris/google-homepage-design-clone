@@ -1,4 +1,4 @@
-/* STYLES FOR PAGE'S MAIN CONTENT */
+/* STYLES FOR HOMEPAGE'S MAIN CONTENT */
 
 main {
   padding: 0 20px 140px;
@@ -16,32 +16,23 @@ main {
   justify-content: center;
 }
 
-/* Button styles */
-.button-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+/* Google logo styles */
+h1 {
+  margin-top: 1.55rem;
+  margin-bottom: 1rem;
 }
 
-.button,
-.button:visited,
-.button:hover,
-.button:active,
-.button:focus {
-  background: transparent;
-  border: 0;
-  border-radius: 0;
-  cursor: pointer;
-  line-height: normal;
-  padding: 0;
-  width: auto;
+.google-logo {
+  max-width: 272px;
 }
 
-.button:hover {
-  text-decoration: none;
+/* Tooltip styles */
+.tooltip {
+  display: none;
+  position: absolute;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 /* Header styles */
@@ -56,24 +47,8 @@ header {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-right: 8px;
-  margin-left: 15px;
-}
-
-header a,
-header a:visited,
-header a:hover,
-header a:active,
-header a:focus {
-  display: none;
-}
-
-header .nav-bar:first-child a,
-header .nav-bar:first-child a:visited,
-header .nav-bar:first-child a:hover,
-header .nav-bar:first-child a:active,
-header .nav-bar:first-child a:focus {
-  display: initial;
+  margin-right: 11px;
+  margin-left: 16px;
 }
 
 .header-item .nav-list a,
@@ -81,7 +56,17 @@ header .nav-bar:first-child a:focus {
 .header-item .nav-list a:hover,
 .header-item .nav-list a:active,
 .header-item .nav-list a:focus {
+  font-size: 0.8rem;
   margin: 0 10px;
+}
+
+.header-item.right .nav-list a,
+.header-item.right .nav-list a:visited,
+.header-item.right .nav-list a:hover,
+.header-item.right .nav-list a:active,
+.header-item.right .nav-list a:focus {
+  font-size: 0.8rem;
+  margin: 0 7px;
 }
 
 .apps-button,
@@ -89,10 +74,10 @@ header .nav-bar:first-child a:focus {
 .apps-button:active,
 .apps-button:focus {
   border-radius: 50%;
-  display: none;
   height: 40px;
-  margin: 0 5px;
+  margin: 0 5px 0 11px;
   padding: 4px;
+  position: relative;
   width: 40px;
 }
 
@@ -100,8 +85,27 @@ header .nav-bar:first-child a:focus {
   background: hsl(0, 0%, 94%);
 }
 
-.apps-icon {
+.apps-button:focus {
+  background: rgba(60,64,67,.12);
+}
+
+.apps-button .apps-icon {
+  font-size: 1.55rem;
   vertical-align: middle;
+}
+
+.apps-button .tooltip {
+  background: hsl(0, 0%, 35%);
+  border-radius: 3px;
+  color: hsl(0, 0%, 100%);
+  font-size: 0.88rem;
+  padding: 5px 9px;
+}
+
+.apps-button:hover .tooltip {
+  bottom: -29px;
+  display: block;
+  right: -25px;
 }
 
 .sign-in-button,
@@ -115,11 +119,13 @@ header .nav-bar:first-child a:focus {
   border-radius: 4px;
   display: initial;
   min-width: 60px;
-  padding: 9px 23px;
+  padding: 8.5px 25px;
 }
 
 .sign-in-button:hover {
-  background: #2b7de9;
+  background: #1b66c9;
+  -webkit-box-shadow: 0 1px 3px 1px rgb(66 64 67 / 15%), 0 1px 2px 0 rgb(60 64 67 / 30%);
+  box-shadow: 0 1px 3px 1px rgb(66 64 67 / 15%), 0 1px 2px 0 rgb(60 64 67 / 30%);
 }
 
 /* Footer styles */
@@ -163,25 +169,35 @@ footer {
   max-width: 12px;
 }
 
+/* Media queries */
 @media all and (min-width: 600px) {
 
   main {
     padding-bottom: 95px;
   }
 
-  header a,
-  header a:visited,
-  header a:hover,
-  header a:active,
-  header a:focus {
-    display: initial;
+  .header-item .nav-list a,
+  .header-item .nav-list a:visited,
+  .header-item .nav-list a:hover,
+  .header-item .nav-list a:active,
+  .header-item .nav-list a:focus {
+    font-size: 1rem;
   }
 
-  .apps-button,
-  .apps-button:hover,
-  .apps-button:active,
-  .apps-button:focus {
-    display: initial;
+  .header-item.right .nav-list .sign-in-button,
+  .header-item.right .nav-list .sign-in-button:visited,
+  .header-item.right .nav-list .sign-in-button:hover,
+  .header-item.right .nav-list .sign-in-button:active,
+  .header-item.right .nav-list .sign-in-button:focus {
+    font-size: 1.03rem;
+  }
+
+  .header-item.right .nav-list a,
+  .header-item.right .nav-list a:visited,
+  .header-item.right .nav-list a:hover,
+  .header-item.right .nav-list a:active,
+  .header-item.right .nav-list a:focus {
+    font-size: 0.95rem;
   }
 
   footer {

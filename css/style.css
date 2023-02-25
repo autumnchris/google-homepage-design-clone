@@ -45,3 +45,31 @@ select,
 textarea {
   font-family: inherit;
 }
+
+/* Button styles */
+.button-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.button,
+.button:visited,
+.button:hover,
+.button:active,
+.button:focus {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  line-height: normal;
+  padding: 0;
+  width: auto;
+}
+
+.button:hover {
+  text-decoration: none;
+}
