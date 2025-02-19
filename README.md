@@ -10,7 +10,7 @@ Inspired by the Google Homepage assignment which was formerly part of the curric
 * CSS3
 * HTML5
 * [Normalize.css](http://necolas.github.io/normalize.css)
-* [Material Icons](https://fonts.google.com/icons)
+* [Material Symbols](https://fonts.google.com/icons)
 * [Google Fonts](https://fonts.google.com)
 
 ## Demo
